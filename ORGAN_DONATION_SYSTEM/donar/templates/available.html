@@ -1,0 +1,40 @@
+{% extends 'dashboard.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="container  bg-white" style="margin-top: 150px;">
+        <table class="table caption-top table-striped table-hover ">
+            
+            <thead>
+               
+                <tr>
+                  <th scope="col">SNo.</th>
+                  <th scope="col">Organ_name</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Hospital_name</th>
+                  <th scope="col">hospital_address</th>
+                  <th scope="col">hospital_phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in key %}
+                <tr>
+                  <th scope="row">{{forloop.counter}}</th>
+                  <td> {{item.organ_name}}</td>
+                  <td> {{item.quantity}}</td>
+                  <td> {{item.hospital_name}}</td>
+                  <td> {{item.hospital_address}}</td>
+                  <td> {{item.hospital_phone}}</td>
+                </tr>
+                {% endfor %}
+               
+              </tbody>
+          </table>
+    </div>
+
+    {% for item in key %}
+    {{item.organ_name}}
+    {% endfor %}
+
+    {% endblock %}

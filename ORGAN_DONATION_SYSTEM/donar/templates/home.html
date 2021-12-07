@@ -1,0 +1,158 @@
+{% extends 'dashboard.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div id="demo" class="carousel slide" style="padding-top:4%;" data-ride="carousel" ;data-interval="500">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" ></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2" class="active"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'donar/images/newp.jpg'%}" alt="Los Angeles" width="1100" height="500">
+      </div>
+  
+  
+      <div class="carousel-item">
+        <img src="{% static 'donar/images/organ-donation2.jpg'%}" alt="Chicago" width="1100" height="500">
+  
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'donar/images/organ-donation1.jpg'%}" alt="New York" width="1100" height="500">
+  
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  </div>
+  <p></p>
+  <!-- CAROUSEL ENDS -->
+  
+  {% if request.session.donar %}
+  <div id="reg"class="jumbotron bg"  style="background-image: url(https://images.unsplash.com/photo-1566198602184-30a482db864a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80);height: 100%;   background-position: center;
+  background-repeat: repeat;padding-left: 4%;padding-right: 4%; padding-bottom: 0%;padding-top: 0%">
+        <div class="jumbotron" style="background-color: #05dfd7;margin-left: auto;text-align: center; border: 4px solid black; border-radius: 20px ">
+          <h1>Thankyou</h1>
+          <h1> For SAVING LIFE</h1>
+          </div>
+        </div>
+
+    {% else %}
+    <div id="reg"class="jumbotron bg"  style="background-image: url(https://images.unsplash.com/photo-1566198602184-30a482db864a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80);height: 100%;   background-position: center;
+    background-repeat: repeat;padding-left: 4%;padding-right: 4%; padding-bottom: 0%;padding-top: 0%">
+          <div class="jumbotron" style="background-color: #05dfd7;margin-left: auto;text-align: center; border: 4px solid black; border-radius: 20px ">
+            <h1>Be a Donor, register today </h1><p></p>
+            <a href="/register"><input type="button" name="" class=" btn btn-warning" style="font-size: 40px;border-radius: 10px" value="Register Yourself">
+          </a></div>
+          </div>
+
+      {% endif %}
+  
+  <!-- TYPES STARTED -->
+        <div id="typ" class="container" style="padding-bottom: 0%;">
+          <div class="jumbotron" class="container pt-3 my-3 bg-primary text-white" style="background-color:#00cc66  ;padding-bottom: 2%;text-align: center">
+  
+            <h1 style="font-size: 50px;color: #fc030f"><b>Organ Donation</b></h1><br>
+            <p style=" font-size: 20px;padding-left: 5%;padding-right: 5%;">Organ donation is the process of removing an organ from one person and surgically placing it in another person. Many organs can be donated. Donations include the liver, kidney, pancreas, and heart.Transplantation gives hope to thousands of people with organ failure.<br>
+              <b>To learn more, choose an option below.</b></p><br>
+  
+  
+          <div class="jumbotron" style=" padding-top: 2%; text-align: center; background: #03fccf;">
+            <h2 style="color: #fc038c">Living donation</h2><br>
+            <!-- <p style=";padding-left 5%;padding-right 5">Living donation offers another choice for transplant candidates, and it saves two lives: the recipient and the next one on the deceased organ waiting list. Even better, kidney and liver patients who are able to receive a living donor transplant can receive the best quality organ much sooner, often in less than a year.</p> -->
+  
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Know More</button>
+          <div id="demo" class="collapse">
+            <div class="container pt-3" style=" color:#2403fc; text-align: left; padding-left: 10% ;padding-right: 10%;">
+  
+            <ul>
+              <li>Living organ donation and transplantation was developed as a direct result of the critical shortage of deceased donors.</li>
+              <li>Living donation is an opportunity to save a life while you are still living.</li>
+              <li>Living donation is not covered by your donor registration and must be considered personally and discussed directly with a transplant center.</li>
+              <li>Today, one in four living donors are not biologically related to the recipient</li>
+              <li>Living donation offers an alternative for individuals awaiting transplantation from a deceased donor and increases the existing organ supply, saving more lives</li>
+              <li>If you are considering being a living donor, it is critical to gather as much information as you can from various sources.</li>
+            </ul>
+              </div>
+          </div>
+        </div>
+  
+        <div class="jumbotron" style=" padding-top: 2%; text-align: center; background: #03fccf;">
+          <h2 style="color: #fc038c">Deceased donation</h2><br>
+          <p style="padding-left: 5%;padding-right: 5%;">Deceased organ, eye or tissue donation is the process of giving an organ (or a part of an organ), eye, or tissue at the time of the donor’s death, for the purpose of transplantation to another person. At the end of your life, you can give life to others.</p>
+  
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Know More</button>
+        <div id="demo2" class="collapse">
+          <div class="container pt-3" style=" color:#2403fc; text-align: left; padding-left: 10% ;padding-right: 10%;">
+  
+          <p>Deceased organ donation is the process of giving an organ or a part of an organ, at the time of the donor’s death, for the purpose of transplantation to another person. At the end of your life, you can give life to others.<p></p>
+  
+            In order for a person to become an organ donor, blood and oxygen must flow through the organs until the time of recovery to ensure viability. This requires that a person die under circumstances that have resulted in a fatal brain injury, usually from massive trauma resulting in bleeding, swelling or lack of oxygen to the brain.<p></p>
+  
+            Only after all efforts to save the patient’s life have been exhausted, tests have been performed to confirm the absence of brain or brainstem activity, and brain death has been declared, is donation a possibility.<p></p>
+  
+            The state and national Donate Life Registries are searched securely online to determine if the patient has personally authorized donation. If the potential donor is not found in the Registry, his or her next of kin or legally authorized representative (usually a spouse, relative or close friend) is offered the opportunity to authorize the donation. Once the donation decision is established, the family is asked to provide a medical and social history. Donation and transplantation professionals determine which organs can be transplanted and to which patients on the national transplant waiting list the organs are to be allocated.</p>
+                      </div>
+        </div>
+      </div>
+     
+      <div class="jumbotron" style=" padding-top: 2%; text-align: center;     background: #03fccf;">
+            <h2 style="color: #fc038c">Vascularized Composite Allografts (VCA)</h2><br>
+            <p style="padding-left: 5%;padding-right: 5%;">Vascularized Composite Allografts (VCAs) involve the transplantation of multiple structures that may include skin, bone, muscles, blood vessels, nerves and connective tissue. The most commonly known type of VCAs are for hand and face transplants.</p>
+  
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Know More</button>
+          <div id="demo3" class="collapse">
+            <div class="container pt-3" style=" color:#2403fc; text-align: left; padding-left: 10% ;padding-right: 10%;">
+  
+            <p>Vascularized Composite Allografts (VCAs) involve the transplantation of multiple structures that may include skin, bone, muscles, blood vessels, nerves and connective tissue. The most commonly known type of VCAs are for hand and face transplants. Federal regulations for VCAs became effective in July 2014. This groundbreaking form of therapy returns vital function and identity to people who have suffered a devastating injury or illness.<p></p>
+  
+            VCA requires a specific authorization, separate from a standard donor registration. Authorization for VCA is never assumed as part of a registration to be an organ, eye and tissue donor. VCA authorization must be specifically stated by an individual on his/her donor registration or by the legal next-of-kin if authorizing the donation at the time of death.</p>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="jumbotron" style=" padding-top: 2%; text-align: center;     background: #03fccf;">
+              <h2 style="color: #fc038c">Pediatric donation</h2><br>
+              <p style="padding-left: 5%;padding-right: 5%;">Pediatric transplants differ slightly from other organ donations — as organ size is critical to a successful transplant, children often respond better to child-sized organs. There are currently 2,000 children under the age of 18 waiting for a variety of organs, and nearly 25% of them are under 5 years old.</p>
+  
+              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo4">Know More</button>
+            <div id="demo4" class="collapse">
+              <div class="container pt-3" style=" color: #2403fc; text-align: left; padding-left: 10% ;padding-right: 10%;">
+  
+              <p>Many of the conditions that prompt the need for transplant can occur as early as infancy — including heart issues like restrictive cardiomyopathy or liver diseases like biliary atresia. Other issues surrounding injuries or diseases may also occur during childhood.<p></p>
+  
+              A number of diagnoses and conditions may necessitate a pediatric transplant. Some conditions can be diagnosed by a pediatrician.<p></p>
+  
+              <b>Kidney conditions</b>, as determined by a pediatric nephrologist, can include acute kidney failure and chronic kidney disease.<p></p>
+  
+              <b>Liver conditions</b>, determined often by pediatric hepatologists, can include metabolic diseases such as Wilson’s disease and Types 1–4 of Glycogen storage disease, acute and and chronic hepatitis, intrahepatic cholestasis, obstructive biliary tract liver disease, traumatic and post-surgical biliary tract diseases, cirrhosis, Caroli disease, congenital hepatic fibrosis, cystic fibrosis, and Budd-Chiari. Biliary atresia is the most common liver disease to require a liver transplant in children.<p></p>
+  
+              <b>Heart conditions</b>, diagnosed by pediatric cardiologists, can include congenital heart disease and cardiomyopathy.<p></p>
+  
+              <b>Lung conditions</b>, diagnosed by pediatric pulmonologists, may include cystic fibrosis and pulmonary hypertension.<p></p>
+  
+              Children suffering from advanced intestinal disease often benefit from intestinal transplants or short bowel transplants to avoid or treat liver problems or to assist with total parenteral nutrition (TPN) when a child’s veins are too damaged for IVs.</p>
+                  </div>
+            </div>
+          </div>
+  
+  
+        </div>
+  </div>
+
+      <!-- TYPES CLOSED -->
+  
+      <!-- BODY ORGANS START -->
+  
+  
+          
+        {% endblock %}

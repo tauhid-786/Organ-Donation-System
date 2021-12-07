@@ -1,0 +1,52 @@
+{% extends 'dashboard.html' %}
+{% load static %}
+{% block content %}
+
+
+
+      <div class="jumbotron" align='center'>
+        <h1 style="color:#0f4c81" style="text-decoration: underline; "><b>Tissue Donation</b></h1><p></p>
+        <img style="width: 150px;height:150px" src="{% static 'donar/images/T.jpg'%}" alt=""><p></p>
+        <p style="padding-left: 20%;padding-right: 20%"><b>Donated tissue such as skin, bone, and heart valves can dramatically improve the quality of life for recipients, and help save lives. One tissue donor can heal the lives of more than 75 people. What are the basics of tissue donation? Read below for more information.</b></p><b></b>
+        <input type="button" name="" class=" btn btn-warning" style="font-size: 20px;border-radius: 10px" value="Register to be a Donor">
+      </div>
+
+      <div class="container" align='center'style="padding-left: 15%;padding-right: 15%" >
+        <h2 style="color:#0f4c81"><b>When is tissue donation needed?</b></h2>
+        <p>Donated human tissue can be used in many surgical applications, saving and healing lives on a daily basis. Tissue donation can benefit patients in a number of serious or life-threatening medical situations, including saving patients with severe burns, allowing athletes with torn ligaments or tendons to heal and regain strength, restoring hope and mobility to military men and women who have been injured in combat, and repairing musculoskeletal structures such as teeth, skin, and spinal components.<p></p>Each year, approximately 39,000 tissue donors provide lifesaving and healing tissue for transplant. Approximately 1.75 million tissue transplants are performed each year. Donate Life America partners with organizations such as the American Association of Tissue Banks to encourage and educate about tissue donation across the country.</p>
+        <h1></h1>
+        <h2 style="color:#0f4c81"><b>How does the tissue donation process work?</b> </h2>
+        <p>Accredited tissue recovery organizations receive referrals when someone has died. An initial determination of tissue donor eligibility is based on a medical evaluation and available social and family information (i.e., age, cause of death, immediate evidence of infection, etc.).<p></p>
+
+        If it is determined that the person is a candidate for tissue donation, donation professionals will search the local state donor registry and the National Donate Life Registry to see if the individual has registered his or her donation decision. If the potential donor’s registration is not found in the registries, the legal next of kin is offered the opportunity to authorize the donation.<p></p>Tissue donation must be initiated within 24 hours of a person’s death. Unlike organs, donated tissue can be processed and stored for an extended period of time. Donated tissue can be used in burn cases, ligament repair, bone replacement, and to help with other serious medical situations. Most people can be potential tissue donors at the time of death. </p>
+        <h1></h1>
+        <h2 style="color:#0f4c81"><b>What tissue can be donated?</b> </h2>
+        <p>There are many different types of tissue that can be donated and used to save lives. These tissues include: corneas (used to restore sight); tendons (used to rebuild joints); heart valves (used to repair cardiac defects); veins (used to re-establish circulation); skin (used to heal burn patients); bones (used to prevent the need for amputation); and birth tissue (used in reconstructive procedures to promote healing, and to treat burns and painful wounds).</p>
+
+
+      <h2 style="color:#0f4c81"><b>How can my donated tissue help?</b> </h2>
+      <p>According to the Musculoskeletal Transplant Foundation, thousands of people die each year waiting for organ transplants, and many more face long waits and poor medical alternatives for lack of a tissue transplant. Tissue donation helps end needless suffering, and saves lives.</p><h1></h1>
+    </div>
+
+    <div class="container" id="org" style=" border-radius: 50px;border: 5px solid black; background-color: #baf1a1;text-align: center; padding:3%">
+    <h1 style="color:#0f4c81">Organs and Tissues for Transplant</h1><br> <h1></h1>
+
+    <div class="row" >
+    <div class="col-md-2 " style=" display: block;margin-left: auto;  width: auto;height: auto"><a href="D:\ORGAN_DONOR\HTML\heart.html"><img src="http://localhost:3000/images\H.jpg" class="img-thumbnail" ></a> </div>
+    <div class="col-md-2 "style=" display: block;  width: auto;height: auto;" ><a href="D:\ORGAN_DONOR\HTML\kidney.html"><img src="http://localhost:3000/images\KF.jpg" alt="" class="img-thumbnail"></a>  </div>
+    <div class="col-md-2"style=" display: block; width: auto;height: auto"> <a href="D:\ORGAN_DONOR\HTML\lungs.html"><img src="http://localhost:3000/images\LUNGS.jpg" alt="" class="img-thumbnail"></a>  </div>
+
+    <div class="col-md-2 " style=" display: block;  width: auto; height: auto;margin-right:auto;"><a href="D:\ORGAN_DONOR\HTML\liver.html"><img src="http://localhost:3000/images\LIV.jpg" class="img-thumbnail" ></a> </div>
+    </div><p></p>
+    <div class="row" >
+    <div class="col-md-2 "style=" display: block;margin-left: auto;  width: auto;height: auto"><a href="D:\ORGAN_DONOR\HTML\cornea.html"><img src="http://localhost:3000/images\C.jpg" alt="" class="img-thumbnail"> </a> </div>
+
+    <div class="col-md-2" ><a href="D:\ORGAN_DONOR\HTML\intestine.html"> <img src="http://localhost:3000/images\I.jpg" class="img-thumbnail" ></a></div>
+
+    <div class="col-md-2" ><a href="D:\ORGAN_DONOR\HTML\pancreas.html"> <img src="http://localhost:3000/images\P.jpg" alt="" class="img-thumbnail"> </a> </div>
+    <div class="col-md-2"style=" display: block;margin-right:  auto;  width: auto;height: auto"><a href="D:\ORGAN_DONOR\HTML\tissue.html"> <img src="http://localhost:3000/images\T.jpg" alt="" class="img-thumbnail"> </a></div>
+    </div>
+    </div>
+
+
+    {% endblock %}
